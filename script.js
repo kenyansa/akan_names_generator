@@ -33,6 +33,15 @@ function getAkanName(){
     localStorage.setItem("gender", gender);
 }
 
-//check if data 
+//check if data exists in localStoage and pre-fill the form
+let storedDob = localStorage.getItem("dob");
+let storedGender = localStorage.getItem("gender");
+
+if (storedDob){
+    document.getElementById("dob").value = storedDob;
+}
+if (storedGender){
+    document.getElementById("gender").value = storedGender;
+}
 //trigger the function onClick
 document.getElementById("generateBtn").addEventListener("click", getAkanName);
