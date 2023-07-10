@@ -25,9 +25,14 @@ function getAkanName(){
             document.getElementById("result").textContent = "Invalid gender!";
         }
     }else{
-        document.getElementById("reslt").textContent = "Invalid date of birth";
+        document.getElementById("result").textContent = "Invalid date of birth";
     }
+
+    //store data in localStorage
+    localStorage.setItem("dob", dob);
+    localStorage.setItem("gender", gender);
 }
 
+//check if data 
 //trigger the function onClick
 document.getElementById("generateBtn").addEventListener("click", getAkanName);
