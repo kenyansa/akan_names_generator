@@ -20,12 +20,12 @@ function getAkanName(){
         }
 
         if (akanName){
-            alert("Your Akan Name is: "+ akanName);
+            document.getElementById("result").textContent = `Your Akan name is: ${akanName}`;
         } else {
-            alert("Invalid gender.");
+            document.getElementById("result").textContent = "Invalid gender!";
         }
     }else{
-        alert("Invalid date of birth");
+        document.getElementById("reslt").textContent = "Invalid date of birth";
     }
 }
 
