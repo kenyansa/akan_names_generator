@@ -1,6 +1,7 @@
 function getAkanName(){
-    //get user's DOB
-    let dob = prompt("Please enter your date of birth (YYY-MM-DD:")
+    //get user's DOB and gender
+    let dob = document.getElementById("dob").value;
+    let gender = document.getElementById("gender").value;
     //create a date object for the entered date of birth
     let birthDate = new Date(dob)
     //get day of the week(0=Sunday, 1= Monday..., 6=Saturday)
@@ -29,4 +30,4 @@ function getAkanName(){
 }
 
 //trigger the function onClick
-document.querySelector("button").addEventListener("click", getAkanName);
+document.getElementById("generateBtn").addEventListener("click", getAkanName);
