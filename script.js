@@ -27,3 +27,6 @@ function getAkanName(){
         alert("Invalid date of birth");
     }
 }
+
+//trigger the function onClick
+document.querySelector("button").addEventListener("click", getAkanName);
