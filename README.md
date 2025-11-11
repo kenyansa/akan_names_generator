@@ -1,4 +1,4 @@
-# age_calculator
+# Akan_Name_Generator
 ### version 1.0.0
 This app generates for you an Akan name, based on  your week day of birth 
 
